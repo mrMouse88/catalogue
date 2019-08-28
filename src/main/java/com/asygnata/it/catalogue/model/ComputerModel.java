@@ -1,12 +1,34 @@
 package com.asygnata.it.catalogue.model;
 
 
+import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 
+@Entity
 public class ComputerModel {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column
+    private Long id;
+
+    @Column
+    @NotBlank
     private String inventoryNumber;
+
+    @Column
+    @NotBlank
     private String model;
+
+    @Column
+    @NotBlank
     private String memory;
+
+    @Column
+    @NotBlank
     private String storage;
+
+    @Column
+    @NotBlank
     private String os;
 
     public ComputerModel(String inventoryNumber, String model, String memory, String storage, String os) {
