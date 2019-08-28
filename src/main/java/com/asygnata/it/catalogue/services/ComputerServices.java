@@ -4,12 +4,14 @@ import com.asygnata.it.catalogue.dto.ComputerDto;
 import com.asygnata.it.catalogue.model.ComputerModel;
 import com.asygnata.it.catalogue.repository.ComputerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.util.List;
 
 import static com.asygnata.it.catalogue.mapper.ComputerMapper.toEntity;
 
+@Service
 public class ComputerServices {
     private ComputerRepository computerRepository;
 
