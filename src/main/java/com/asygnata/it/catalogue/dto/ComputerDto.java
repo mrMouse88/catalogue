@@ -3,7 +3,7 @@ package com.asygnata.it.catalogue.dto;
 import javax.validation.constraints.NotEmpty;
 
 public class ComputerDto {
-    @NotEmpty
+
     private Long id;
 
     @NotEmpty

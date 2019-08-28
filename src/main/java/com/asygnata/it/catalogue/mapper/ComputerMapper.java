@@ -11,6 +11,7 @@ public class ComputerMapper {
         computerDto.setModel(computerModel.getModel());
         computerDto.setStorage(computerModel.getStorage());
         computerDto.setOs(computerModel.getOs());
+        computerDto.setId(computerModel.getId());
         return computerDto;
     }
 
@@ -21,6 +22,7 @@ public class ComputerMapper {
         computerModel.setModel(computerDto.getModel());
         computerModel.setOs(computerDto.getOs());
         computerModel.setStorage(computerDto.getStorage());
+        computerModel.setId(computerDto.getId());
         return computerModel;
     }
 }

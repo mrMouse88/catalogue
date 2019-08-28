@@ -40,7 +40,7 @@ public class ComputerController {
         this.computerServices.addComputer(computerDto);
     }
 
-    @RequestMapping(value = "/computer", method = RequestMethod.DELETE)
+    @RequestMapping(value = "/computer/{id}", method = RequestMethod.DELETE)
     public void deleteComputerById(@PathVariable Long id){
         this.computerServices.deleteById(id);
     }
