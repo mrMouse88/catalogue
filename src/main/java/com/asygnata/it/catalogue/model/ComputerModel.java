@@ -31,6 +31,9 @@ public class ComputerModel {
     @NotBlank
     private String os;
 
+    public ComputerModel() {
+    }
+
     public ComputerModel(String inventoryNumber, String model, String memory, String storage, String os) {
         this.inventoryNumber = inventoryNumber;
         this.model = model;
